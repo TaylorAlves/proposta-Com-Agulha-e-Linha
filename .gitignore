@@ -1,0 +1,15 @@
+# Ignorar arquivos de sistema e ferramentas
+.DS_Store
+Thumbs.db
+*.log
+
+# Ignorar configurações de IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignorar dependências (se houver no futuro)
+node_modules/
+dist/
+build/

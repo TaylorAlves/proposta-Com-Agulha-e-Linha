@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYIO — Proposta de Naming 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Importação da Geist Sans via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist-sans@1.0.0/dist/font.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Geist Sans', 'Inter', 'sans-serif'],
+                        mono: ['Geist Mono', 'monospace'],
+                    },
+                    colors: {
+                        'ice-white': '#F9FAFB',
+                        'deep-black': '#212121',
+                        'ash-gray': '#6B7280',
+                        'light-gray': '#E5E7EB'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #F9FAFB;
+            color: #212121;
+            font-family: 'Geist Sans', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+
+        .section-intro {
+            border-left: 1px solid #212121;
+            padding-left: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .nav-item {
+            position: relative;
+            transition: color 0.2s ease;
+        }
+
+        .nav-item::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: #212121;
+            transition: width 0.2s ease;
+        }
+
+        .nav-item:hover::after, .nav-item.active::after {
+            width: 100%;
+        }
+
+        /* Estilo para listas minimalistas */
+        .list-minimal {
+            list-style-type: none;
+        }
+        .list-minimal li::before {
+            content: "—";
+            margin-right: 0.5rem;
+            color: #6B7280;
+        }
+    </style>
+</head>
+<body class="selection:bg-deep-black selection:text-ice-white">
+
+    <!-- Chosen Palette: Ice & Ash (Branco Gelo #F9FAFB, Preto #212121, Cinza #6B7280). -->
+    
+    <!-- Application Structure Plan: A aplicação foi estruturada como uma proposta estratégica linear em 2026. A arquitetura de informação prioriza a leitura e a compreensão do "porquê" por trás do nome. Dividimos em: 1. Definição (Capa), 2. Diagnóstico (O problema com Nexus), 3. Tese (A semântica de AYIO), 4. Validação (Atributos técnicos) e 5. Conclusão. Este fluxo foca no convencimento racional e na clareza tipográfica. -->
+
+    <!-- Visualization & Content Choices: 
+    1. Diagnóstico de Naming: Gráfico de Radar (Chart.js) em escala de cinza para comparar Nexus e AYIO em termos de originalidade e disponibilidade.
+    2. Anatomia Semântica: Interface interativa baseada em blocos de texto que explicam o sufixo e prefixo.
+    3. Pilares: Lista minimalista com hierarquia de pesos tipográficos.
+    -->
+
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+
+    <!-- Navegação Minimalista -->
+    <nav class="fixed top-0 left-0 w-full bg-ice-white/80 backdrop-blur-md z-50 border-b border-light-gray">
+        <div class="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
+            <span class="font-bold tracking-tighter text-xl">AYIO</span>
+            <div class="hidden md:flex space-x-8 text-[11px] uppercase tracking-widest font-medium">
+                <a href="#diagnostico" class="nav-item">Diagnóstico</a>
+                <a href="#tese" class="nav-item">Tese</a>
+                <a href="#validacao" class="nav-item">Validação</a>
+                <a href="#posicionamento" class="nav-item">Posicionamento</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero: O Nome -->
+    <section class="min-h-screen flex flex-col justify-center px-6 max-w-5xl mx-auto">
+        <p class="text-[10px] uppercase tracking-[0.3em] text-ash-gray mb-4">Proposta de Naming — 2026</p>
+        <h1 class="text-7xl md:text-[10rem] font-bold tracking-tighter leading-none mb-8">AYIO</h1>
+        <p class="text-xl md:text-2xl font-light text-ash-gray max-w-2xl leading-snug">
+            Um nome desenhado para a convergência entre software inteligente e impacto estratégico real.
+        </p>
+        <div class="mt-16 border-t border-light-gray pt-8 flex gap-12">
+            <div>
+                <span class="block text-[10px] uppercase text-ash-gray mb-1">Status</span>
+                <span class="text-sm font-medium">Pronto para registro</span>
+            </div>
+            <div>
+                <span class="block text-[10px] uppercase text-ash-gray mb-1">Posicionamento</span>
+                <span class="text-sm font-medium">AI Software Studio</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 01: Diagnóstico -->
+    <section id="diagnostico" class="py-32 px-6 max-w-5xl mx-auto border-t border-light-gray">
+        <div class="section-intro">
+            <h2 class="text-2xl font-bold uppercase tracking-tight">01. Diagnóstico do Cenário</h2>
+            <p class="text-ash-gray mt-2 max-w-xl text-sm">Análise crítica sobre a saturação do nome atual e a necessidade de uma fundação verbal exclusiva para 2026.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+            <div>
+                <h3 class="text-lg font-bold mb-4 italic">O Limite do Nexus</h3>
+                <p class="text-sm text-ash-gray leading-relaxed mb-6">
+                    O nome "Nexus" atingiu seu teto de escalabilidade. Em um mercado global, a ambiguidade fonética e a falta de exclusividade digital impedem a marca de se consolidar como líder em IA. 
+                </p>
+                <ul class="list-minimal text-xs space-y-3 text-ash-gray">
+                    <li>Saturação em registros de software</li>
+                    <li>Falta de domínio .com.br proprietário</li>
+                    <li>Conotação de tecnologia genérica dos anos 2010</li>
+                </ul>
+            </div>
+            <div class="chart-container">
+                <canvas id="diagnosticoChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 02: Tese Semântica -->
+    <section id="tese" class="py-32 px-6 bg-white border-y border-light-gray">
+        <div class="max-w-5xl mx-auto">
+            <div class="section-intro">
+                <h2 class="text-2xl font-bold uppercase tracking-tight">02. Tese Semântica</h2>
+                <p class="text-ash-gray mt-2 max-w-xl text-sm">A desconstrução da palavra AYIO revela uma estrutura focada na lógica computacional e na inteligência.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mt-12">
+                <!-- Bloco AY -->
+                <div class="p-8 border border-light-gray hover:border-deep-black transition-colors">
+                    <span class="text-[10px] font-mono text-ash-gray">Prefix</span>
+                    <h3 class="text-4xl font-bold my-4">AY</h3>
+                    <p class="text-sm text-ash-gray leading-relaxed">
+                        A fonética direta de <span class="text-deep-black font-medium">AI</span>. Estabelece a categoria de atuação no primeiro contato auditivo, sem a necessidade de explicações extras.
+                    </p>
+                </div>
+                <!-- Bloco I -->
+                <div class="p-8 border border-light-gray hover:border-deep-black transition-colors">
+                    <span class="text-[10px] font-mono text-ash-gray">Core</span>
+                    <h3 class="text-4xl font-bold my-4">I</h3>
+                    <p class="text-sm text-ash-gray leading-relaxed">
+                        Representa <span class="text-deep-black font-medium">Intelligence</span> e <span class="text-deep-black font-medium">Input</span>. É o eixo central que sustenta o processamento e a lógica do software.
+                    </p>
+                </div>
+                <!-- Bloco O -->
+                <div class="p-8 border border-light-gray hover:border-deep-black transition-colors">
+                    <span class="text-[10px] font-mono text-ash-gray">Suffix</span>
+                    <h3 class="text-4xl font-bold my-4">O</h3>
+                    <p class="text-sm text-ash-gray leading-relaxed">
+                        O símbolo de <span class="text-deep-black font-medium">Output</span> e totalidade. Fecha o ciclo do processamento, entregando o impacto estratégico final ao usuário.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 03: Validação Estratégica -->
+    <section id="validacao" class="py-32 px-6 max-w-5xl mx-auto">
+        <div class="section-intro">
+            <h2 class="text-2xl font-bold uppercase tracking-tight">03. Validação Técnica</h2>
+            <p class="text-ash-gray mt-2 max-w-xl text-sm">Por que AYIO é a escolha definitiva em termos de viabilidade e percepção.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-start">
+            <div class="space-y-12">
+                <div class="group">
+                    <h4 class="text-xs uppercase tracking-widest font-bold mb-2 transition-colors group-hover:text-ash-gray">Internacionalização</h4>
+                    <p class="text-sm text-ash-gray">Um nome curto (4 letras), de fácil pronúncia em inglês, português e espanhol. Sem barreiras fonéticas para expansão.</p>
+                </div>
+                <div class="group">
+                    <h4 class="text-xs uppercase tracking-widest font-bold mb-2 transition-colors group-hover:text-ash-gray">Disponibilidade</h4>
+                    <p class="text-sm text-ash-gray">Possibilidade de domínio proprietário. Baixa concorrência em buscadores para o termo exato.</p>
+                </div>
+            </div>
+            <div class="bg-deep-black text-ice-white p-12 flex flex-col justify-between">
+                <span class="text-[10px] uppercase tracking-[0.4em] opacity-50">Assinatura Estratégica</span>
+                <div>
+                    <h4 class="text-3xl font-light leading-tight">Software inteligente,<br><span class="font-bold">impacto estratégico.</span></h4>
+                </div>
+                <span class="text-xs font-mono mt-8">AYIO — AI Software Studio</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 04: Posicionamento -->
+    <section id="posicionamento" class="py-32 px-6 max-w-5xl mx-auto border-t border-light-gray">
+        <div class="section-intro">
+            <h2 class="text-2xl font-bold uppercase tracking-tight">04. O Novo Posicionamento</h2>
+            <p class="text-ash-gray mt-2 max-w-xl text-sm">A evolução de uma agência de desenvolvimento para um estúdio de produtos de inteligência.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mt-16">
+            <!-- Mockup Visual Abstrato -->
+            <div class="relative w-full aspect-[4/3] bg-[#E5E7EB]/30 rounded-2xl overflow-hidden border border-light-gray flex items-center justify-center p-8 lg:p-12">
+                <!-- Browser/App Frame -->
+                <div class="w-full h-full bg-white rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-[#E5E7EB] flex flex-col overflow-hidden transition-transform duration-700 hover:scale-[1.02]">
+                    <!-- Header/Nav do Mockup -->
+                    <div class="h-10 border-b border-light-gray flex items-center px-4 justify-between bg-ice-white/50">
+                        <div class="flex gap-1.5">
+                            <div class="w-2.5 h-2.5 rounded-full bg-gray-300"></div>
+                            <div class="w-2.5 h-2.5 rounded-full bg-gray-300"></div>
+                            <div class="w-2.5 h-2.5 rounded-full bg-gray-300"></div>
+                        </div>
+                        <!-- Logo discreto no canto -->
+                        <span class="text-[9px] font-bold tracking-tighter text-deep-black">AYIO</span>
+                    </div>
+                    <!-- Body do Mockup -->
+                    <div class="flex-1 p-5 flex flex-col gap-4 bg-white">
+                        <div class="w-1/3 h-4 bg-ice-white rounded"></div>
+                        <div class="w-full flex-1 bg-ice-white rounded-md border border-light-gray/50"></div>
+                        <div class="flex gap-4">
+                            <div class="w-1/2 h-8 bg-ice-white rounded"></div>
+                            <div class="w-1/2 h-8 bg-ice-white rounded"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conteúdo Estratégico -->
+            <div class="space-y-10">
+                <div>
+                    <span class="text-[10px] uppercase tracking-[0.3em] text-ash-gray block mb-3">Slogan</span>
+                    <h3 class="text-3xl font-light leading-tight text-deep-black">Software inteligente,<br><span class="font-bold">impacto estratégico.</span></h3>
+                </div>
+                
+                <div>
+                    <span class="text-[10px] uppercase tracking-[0.3em] text-ash-gray block mb-3">Descriptor</span>
+                    <p class="text-lg font-mono text-ash-gray">AYIO — <span class="text-deep-black font-medium">AI Software Studio.</span></p>
+                </div>
+
+                <div class="pt-8 border-t border-light-gray">
+                    <span class="text-[10px] uppercase tracking-[0.3em] text-ash-gray block mb-3">Argumento</span>
+                    <p class="text-sm text-ash-gray leading-relaxed">
+                        Deixamos de ser apenas "desenvolvimento" para sermos um <span class="text-deep-black font-medium">estúdio de produtos de inteligência</span>. Nossa entrega vai além do código; desenhamos e implementamos soluções que transformam a estratégia do negócio.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 px-6 border-t border-light-gray">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+            <div>
+                <span class="text-2xl font-bold tracking-tighter">AYIO</span>
+                <p class="text-[10px] text-ash-gray mt-2 uppercase tracking-widest">© 2026 Naming Proposal</p>
+            </div>
+            <div class="text-[10px] text-ash-gray font-mono uppercase tracking-widest text-right">
+                Elaborado por ©Taylor Alves<br>Brand Strategy & Identity
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript: Lógica de Interação e Dados -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // Configuração do Gráfico de Diagnóstico (Escala de Cinza)
+            const initCharts = () => {
+                const ctx = document.getElementById('diagnosticoChart').getContext('2d');
+                
+                new Chart(ctx, {
+                    type: 'radar',
+                    data: {
+                        labels: ['Originalidade', 'Diferenciação', 'Escalabilidade', 'Domínio .com.br', 'Resonância IA'],
+                        datasets: [
+                            {
+                                label: 'Nexus (Atual)',
+                                data: [30, 25, 45, 10, 35],
+                                backgroundColor: 'rgba(107, 114, 128, 0.1)',
+                                borderColor: '#6B7280',
+                                borderWidth: 1,
+                                pointRadius: 2,
+                                pointBackgroundColor: '#6B7280'
+                            },
+                            {
+                                label: 'AYIO (Proposta)',
+                                data: [95, 90, 95, 100, 90],
+                                backgroundColor: 'rgba(33, 33, 33, 0.15)',
+                                borderColor: '#212121',
+                                borderWidth: 2,
+                                pointRadius: 4,
+                                pointBackgroundColor: '#212121'
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            r: {
+                                angleLines: { color: '#E5E7EB' },
+                                grid: { color: '#F3F4F6' },
+                                ticks: { display: false, stepSize: 20 },
+                                pointLabels: {
+                                    font: { size: 9, family: 'Geist Sans', weight: '500' },
+                                    color: '#6B7280'
+                                }
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                                labels: {
+                                    usePointStyle: true,
+                                    font: { size: 10, family: 'Geist Sans' },
+                                    padding: 20
+                                }
+                            }
+                        }
+                    }
+                });
+            };
+
+            // Destaque de Navegação Ativa
+            const setupNavHighlight = () => {
+                const sections = document.querySelectorAll('section[id]');
+                const navLinks = document.querySelectorAll('.nav-item');
+
+                const updateNav = () => {
+                    let current = '';
+                    sections.forEach(section => {
+                        const sectionTop = section.offsetTop;
+                        if (window.scrollY >= sectionTop - 150) {
+                            current = section.getAttribute('id');
+                        }
+                    });
+
+                    // Verifica se chegou no fim da página para ativar a última seção
+                    if ((window.innerHeight + Math.round(window.scrollY)) >= document.body.offsetHeight - 50) {
+                        current = sections[sections.length - 1].getAttribute('id');
+                    }
+
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (current && link.getAttribute('href').includes(current)) {
+                            link.classList.add('active');
+                        }
+                    });
+                };
+
+                window.addEventListener('scroll', updateNav);
+                updateNav();
+            };
+
+            initCharts();
+            setupNavHighlight();
+        });
+    </script>
+</body>
+</html>
