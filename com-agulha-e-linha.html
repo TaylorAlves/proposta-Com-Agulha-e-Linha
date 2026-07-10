@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Com Agulha e Linha — Proposta de E-commerce Bilíngue 2026</title>
+    <meta name="description" content="Proposta de criação de loja virtual bilíngue (PT/EN) para a Com Agulha e Linha. Uma loja online para levar seu trabalho artesanal além do Instagram.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Importação da Geist Sans via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist-sans@1.0.0/dist/font.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Geist Sans', 'Inter', 'sans-serif'],
+                        mono: ['Geist Mono', 'monospace'],
+                    },
+                    colors: {
+                        'ice-white': '#F9FAFB',
+                        'deep-black': '#212121',
+                        'ash-gray': '#6B7280',
+                        'light-gray': '#E5E7EB'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #F9FAFB;
+            color: #212121;
+            font-family: 'Geist Sans', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .section-intro {
+            border-left: 1px solid #212121;
+            padding-left: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .nav-item {
+            position: relative;
+            transition: color 0.2s ease;
+        }
+
+        .nav-item::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: #212121;
+            transition: width 0.2s ease;
+        }
+
+        .nav-item:hover::after, .nav-item.active::after {
+            width: 100%;
+        }
+
+        /* Estilo para listas minimalistas */
+        .list-minimal {
+            list-style-type: none;
+        }
+        .list-minimal li::before {
+            content: "—";
+            margin-right: 0.5rem;
+            color: #6B7280;
+        }
+
+        /* Numeração dos itens de responsabilidade */
+        .responsibility-num {
+            font-family: 'Geist Mono', monospace;
+            font-size: 10px;
+            color: #6B7280;
+            letter-spacing: 0.1em;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+    </style>
+</head>
+<body class="selection:bg-deep-black selection:text-ice-white">
+
+    <!-- Navegação Minimalista -->
+    <nav class="fixed top-0 left-0 w-full bg-ice-white/80 backdrop-blur-md z-50 border-b border-light-gray">
+        <div class="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
+            <span class="font-bold tracking-tighter text-xl">Com Agulha e Linha</span>
+            <div class="hidden md:flex space-x-8 text-[11px] uppercase tracking-widest font-medium">
+                <a href="#desafio" class="nav-item">Desafio</a>
+                <a href="#solucao" class="nav-item">Solução &amp; Escopo</a>
+                <a href="#plataforma" class="nav-item">Plataforma &amp; Investimento</a>
+                <a href="#proximos-passos" class="nav-item">Próximos Passos</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero: Capa -->
+    <section class="min-h-screen flex flex-col justify-center px-6 max-w-5xl mx-auto">
+        <p class="text-[10px] uppercase tracking-[0.3em] text-ash-gray mb-4">Proposta de Criação de Site — E-commerce Bilíngue</p>
+        <h1 class="text-7xl md:text-[9rem] font-bold tracking-tighter leading-none mb-8">Com Agulha<br>e Linha</h1>
+        <p class="text-xl md:text-2xl font-light text-ash-gray max-w-2xl leading-snug">
+            Uma loja online para levar seu trabalho artesanal além do Instagram, com identidade própria em português e inglês.
+        </p>
+        <div class="mt-16 border-t border-light-gray pt-8 flex gap-12">
+            <div>
+                <span class="block text-[10px] uppercase text-ash-gray mb-1">Data</span>
+                <span class="text-sm font-medium">Julho / 2026</span>
+            </div>
+            <div>
+                <span class="block text-[10px] uppercase text-ash-gray mb-1">Elaborado por</span>
+                <span class="text-sm font-medium">Taylor Alves</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 01: O Desafio -->
+    <section id="desafio" class="py-32 px-6 max-w-5xl mx-auto border-t border-light-gray">
+        <div class="section-intro">
+            <h2 class="text-2xl font-bold uppercase tracking-tight">01. Onde Estamos Hoje — O Desafio</h2>
+            <p class="text-ash-gray mt-2 max-w-xl text-sm">A marca já tem identidade e público, mas ainda não tem uma casa própria.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-start">
+            <div>
+                <ul class="list-minimal text-sm space-y-4 text-ash-gray">
+                    <li>A Com Agulha e Linha vende peças artesanais, algumas feitas sob encomenda, hoje divulgadas principalmente pelo Instagram.</li>
+                    <li>O domínio comagulhaelinha.com.br já existiu, mas está inativo — a marca não tem presença própria na web no momento.</li>
+                    <li>Nem todo o catálogo deve ir para o site: apenas os produtos de maior saída, já que parte da produção é sob encomenda.</li>
+                    <li>A loja precisa ser bilíngue (PT/EN), ampliando o alcance para além do público nacional.</li>
+                </ul>
+            </div>
+            <div class="bg-deep-black text-ice-white p-10 flex flex-col gap-6">
+                <span class="text-[10px] uppercase tracking-[0.4em] opacity-50">A Meta Principal</span>
+                <h3 class="text-2xl font-light leading-snug">Criar uma loja virtual profissional, minimalista e fiel à identidade em <span class="font-bold">preto e branco</span> da marca, pronta para vender.</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 02: A Solução -->
+    <section id="solucao" class="py-32 px-6 bg-white border-y border-light-gray">
+        <div class="max-w-5xl mx-auto">
+            <div class="section-intro">
+                <h2 class="text-2xl font-bold uppercase tracking-tight">02. A Nossa Solução — Uma loja simples de manter, bonita de visitar</h2>
+                <p class="text-ash-gray mt-2 max-w-xl text-sm">Vamos estruturar a loja em uma plataforma de e-commerce pronta (Nuvemshop, Shopify ou Wix), mantendo a estética preto e branco e artesanal da marca, com curadoria dos produtos mais vendidos e experiência bilíngue.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                <!-- Etapa 1 -->
+                <div class="p-8 border border-light-gray hover:border-deep-black transition-colors">
+                    <span class="text-[10px] font-mono text-ash-gray">Etapa 1</span>
+                    <h3 class="text-xl font-bold my-4">Pilar 1: Definição de Plataforma &amp; Estrutura</h3>
+                    <p class="text-sm text-ash-gray mb-6">Escolhendo a base certa para o negócio.</p>
+                    <ul class="list-minimal text-xs space-y-3 text-ash-gray">
+                        <li>Análise conjunta para definir a plataforma ideal (Nuvemshop, Shopify ou Wix) considerando custo, facilidade de uso e necessidades de venda.</li>
+                        <li>Configuração inicial da loja, domínio e identidade visual (preto e branco, estética artesanal).</li>
+                        <li>Curadoria e organização das categorias de produtos, com foco nos itens de maior saída.</li>
+                    </ul>
+                </div>
+                <!-- Etapa 2 -->
+                <div class="p-8 border border-light-gray hover:border-deep-black transition-colors">
+                    <span class="text-[10px] font-mono text-ash-gray">Etapa 2</span>
+                    <h3 class="text-xl font-bold my-4">Pilar 2: Construção &amp; Bilinguismo</h3>
+                    <p class="text-sm text-ash-gray mb-6">Deixando a loja pronta para vender em dois idiomas.</p>
+                    <ul class="list-minimal text-xs space-y-3 text-ash-gray">
+                        <li>Criação das páginas de produto (fotos, descrições, preços) em português e inglês.</li>
+                        <li>Configuração de métodos de pagamento e frete de acordo com a plataforma escolhida.</li>
+                        <li>Testes finais e ajustes antes do lançamento.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 03: Plataforma & Responsabilidades -->
+    <section id="plataforma" class="py-32 px-6 max-w-5xl mx-auto">
+        <div class="section-intro">
+            <h2 class="text-2xl font-bold uppercase tracking-tight">03. Plataforma &amp; Responsabilidades</h2>
+            <p class="text-ash-gray mt-2 max-w-xl text-sm">Transparência sobre custos de operação.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-start">
+            <div class="space-y-10">
+                <div class="group">
+                    <span class="responsibility-num">01.</span>
+                    <h4 class="text-xs uppercase tracking-widest font-bold mb-2 transition-colors group-hover:text-ash-gray">Escolha da Plataforma</h4>
+                    <p class="text-sm text-ash-gray">Ajudamos a decidir entre Nuvemshop, Shopify ou Wix conforme o perfil do negócio.</p>
+                </div>
+                <div class="group">
+                    <span class="responsibility-num">02.</span>
+                    <h4 class="text-xs uppercase tracking-widest font-bold mb-2 transition-colors group-hover:text-ash-gray">Assinatura da Plataforma</h4>
+                    <p class="text-sm text-ash-gray">Mensalidade da plataforma escolhida é de responsabilidade financeira da cliente.</p>
+                </div>
+                <div class="group">
+                    <span class="responsibility-num">03.</span>
+                    <h4 class="text-xs uppercase tracking-widest font-bold mb-2 transition-colors group-hover:text-ash-gray">Domínio</h4>
+                    <p class="text-sm text-ash-gray">Registro/renovação do domínio (ex: comagulhaelinha.com.br) é de responsabilidade financeira da cliente; orientamos todo o processo.</p>
+                </div>
+                <div class="group">
+                    <span class="responsibility-num">04.</span>
+                    <h4 class="text-xs uppercase tracking-widest font-bold mb-2 transition-colors group-hover:text-ash-gray">Orientação Contínua</h4>
+                    <p class="text-sm text-ash-gray">Prestamos suporte na configuração desses itens, mesmo sendo custos da cliente.</p>
+                </div>
+            </div>
+
+            <div class="bg-deep-black text-ice-white p-12 flex flex-col justify-between gap-10">
+                <span class="text-[10px] uppercase tracking-[0.4em] opacity-50">Resumo de Responsabilidades</span>
+                <div class="space-y-6">
+                    <div>
+                        <span class="text-[10px] uppercase tracking-widest text-ice-white/50 block mb-1">Nossa responsabilidade</span>
+                        <p class="text-sm font-light leading-relaxed">Definição de plataforma, montagem da loja, cadastro de produtos bilíngue, configuração inicial e suporte.</p>
+                    </div>
+                    <div class="border-t border-white/10 pt-6">
+                        <span class="text-[10px] uppercase tracking-widest text-ice-white/50 block mb-1">Responsabilidade da cliente</span>
+                        <p class="text-sm font-light leading-relaxed">Assinatura da plataforma de e-commerce e domínio.</p>
+                    </div>
+                </div>
+                <span class="text-xs font-mono opacity-40">Com Agulha e Linha — E-commerce Bilíngue</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 04: Investimento -->
+    <section id="investimento" class="py-32 px-6 max-w-5xl mx-auto border-t border-light-gray">
+        <div class="section-intro">
+            <h2 class="text-2xl font-bold uppercase tracking-tight">04. Investimento e Escopo — Proposta Orçamentária</h2>
+            <p class="text-ash-gray mt-2 max-w-xl text-sm">Valores claros, escopo definido.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
+            <!-- Card de Investimento -->
+            <div class="p-10 border border-deep-black flex flex-col gap-6">
+                <div>
+                    <span class="text-[10px] font-mono text-ash-gray">Pagamento Único</span>
+                    <h3 class="text-xl font-bold mt-3">Criação da Loja Virtual</h3>
+                    <p class="text-sm text-ash-gray mt-2 leading-relaxed">Cobre definição de plataforma, montagem da loja, curadoria de produtos, cadastro bilíngue e configuração inicial.</p>
+                </div>
+                <div class="border-t border-light-gray pt-6">
+                    <span class="block text-4xl font-bold tracking-tight">R$ 2.500</span>
+                    <span class="block text-xl font-light text-ash-gray mt-1">a R$ 4.000,00</span>
+                    <p class="text-[11px] text-ash-gray mt-3 leading-relaxed">Valor final definido após confirmação da quantidade de produtos a serem cadastrados.</p>
+                </div>
+            </div>
+            <!-- Nota -->
+            <div class="p-10 bg-ice-white border border-light-gray flex flex-col justify-center gap-4">
+                <span class="text-[10px] font-mono text-ash-gray uppercase tracking-widest">Nota Importante</span>
+                <p class="text-sm text-ash-gray leading-relaxed">Custos de assinatura da plataforma de e-commerce e de domínio são de responsabilidade da cliente e não estão incluídos neste valor.</p>
+                <div class="mt-4 border-t border-light-gray pt-4">
+                    <ul class="list-minimal text-xs space-y-2 text-ash-gray">
+                        <li>Nuvemshop: planos a partir de R$ 49/mês</li>
+                        <li>Shopify: planos a partir de USD 29/mês</li>
+                        <li>Wix: planos a partir de R$ 39/mês</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Próximos Passos (Timeline) -->
+    <section id="proximos-passos" class="py-32 px-6 bg-white border-y border-light-gray">
+        <div class="max-w-5xl mx-auto">
+            <div class="section-intro">
+                <h2 class="text-2xl font-bold uppercase tracking-tight">Vamos Começar?</h2>
+                <p class="text-ash-gray mt-2 max-w-xl text-sm">Um processo simples e colaborativo, do zero ao lançamento.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-0 mt-12">
+                <!-- Passo 1 -->
+                <div class="p-8 border border-light-gray hover:border-deep-black transition-colors md:border-r-0">
+                    <span class="text-[10px] font-mono text-ash-gray">01</span>
+                    <h3 class="text-sm font-bold mt-3 mb-2">Aprovação</h3>
+                    <p class="text-xs text-ash-gray leading-relaxed">Aprovação desta proposta.</p>
+                </div>
+                <!-- Passo 2 -->
+                <div class="p-8 border border-light-gray hover:border-deep-black transition-colors md:border-r-0">
+                    <span class="text-[10px] font-mono text-ash-gray">02</span>
+                    <h3 class="text-sm font-bold mt-3 mb-2">Definição</h3>
+                    <p class="text-xs text-ash-gray leading-relaxed">Escolha da plataforma (Nuvemshop, Shopify ou Wix) e envio da lista de produtos mais vendidos.</p>
+                </div>
+                <!-- Passo 3 -->
+                <div class="p-8 border border-light-gray hover:border-deep-black transition-colors md:border-r-0">
+                    <span class="text-[10px] font-mono text-ash-gray">03</span>
+                    <h3 class="text-sm font-bold mt-3 mb-2">Conteúdo</h3>
+                    <p class="text-xs text-ash-gray leading-relaxed">Envio de fotos, descrições e traduções dos produtos.</p>
+                </div>
+                <!-- Passo 4 -->
+                <div class="p-8 border border-light-gray hover:border-deep-black transition-colors">
+                    <span class="text-[10px] font-mono text-ash-gray">04</span>
+                    <h3 class="text-sm font-bold mt-3 mb-2">Lançamento</h3>
+                    <p class="text-xs text-ash-gray leading-relaxed">Montagem da loja e lançamento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer de Contato -->
+    <footer class="py-20 px-6 border-t border-light-gray">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+            <div>
+                <span class="text-2xl font-bold tracking-tighter">Com Agulha e Linha</span>
+                <p class="text-[10px] text-ash-gray mt-1 uppercase tracking-widest">Proposta de Criação de Loja Virtual Bilíngue</p>
+                <div class="mt-6 space-y-1">
+                    <p class="text-xs text-ash-gray font-mono">contato@tayloralves.com</p>
+                    <p class="text-xs text-ash-gray font-mono">+55 (91) 99380-8014</p>
+                </div>
+            </div>
+            <div class="text-[10px] text-ash-gray font-mono uppercase tracking-widest text-right">
+                Elaborado por ©Taylor Alves<br>Proposta de E-commerce Bilíngue<br>2026
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript: Destaque de Navegação Ativa -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // Destaque de Navegação Ativa
+            const setupNavHighlight = () => {
+                const sections = document.querySelectorAll('section[id]');
+                const navLinks = document.querySelectorAll('.nav-item');
+
+                const updateNav = () => {
+                    let current = '';
+                    sections.forEach(section => {
+                        const sectionTop = section.offsetTop;
+                        if (window.scrollY >= sectionTop - 150) {
+                            current = section.getAttribute('id');
+                        }
+                    });
+
+                    // Verifica se chegou no fim da página para ativar a última seção
+                    if ((window.innerHeight + Math.round(window.scrollY)) >= document.body.offsetHeight - 50) {
+                        current = sections[sections.length - 1].getAttribute('id');
+                    }
+
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (current && link.getAttribute('href').includes(current)) {
+                            link.classList.add('active');
+                        }
+                    });
+                };
+
+                window.addEventListener('scroll', updateNav);
+                updateNav();
+            };
+
+            setupNavHighlight();
+        });
+    </script>
+</body>
+</html>
